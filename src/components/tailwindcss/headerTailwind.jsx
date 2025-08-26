@@ -2,10 +2,23 @@ import { ShoppingBag } from "lucide-react";
 import { useCart } from "../../context/useCartContext";
 import { useTheme } from "../../context/useThemeContext";
 import logo from "../../assets/logo.png";
+import { useEffect } from "react";
 
 export function HeaderTailwind() {
   const { theme, setTheme } = useTheme();
   const { cartItems, isCartOpen, setIsCartOpen } = useCart();
+
+  useEffect(() => {
+    if (isCartOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isCartOpen]);
 
   return (
     <header className="flex items-center justify-between py-6 xl:px-3 px-4 border-b-2 border-orange-600 ">
