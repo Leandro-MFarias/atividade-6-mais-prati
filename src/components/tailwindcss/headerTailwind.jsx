@@ -11,27 +11,27 @@ export function HeaderTailwind() {
     <header className="flex items-center justify-between py-6 xl:px-3 px-4 border-b-2 border-orange-600 ">
       <div className="flex items-center space-x-2">
         <img src={logo} alt="" className="w-11" />
-        <h2 className="self-end text-3xl text-orange-500 font-semibold">
+        <h2 className="self-end text-xl sm:text-3xl text-orange-500 font-semibold">
           GameShop
         </h2>
       </div>
 
-      <nav className="flex items-center space-x-8">
+      <nav className="flex items-end space-x-2 sm:space-x-8 mt-4 sm:mt-0">
         <button
-          className={`relative w-20 h-10 rounded-3xl cursor-pointer shadow-light translate-y-1 bg-neutral-200`}
+          className={`relative w-14 h-8 sm:w-20 sm:h-10 rounded-3xl cursor-pointer shadow-light translate-y-1 sm:translate-y-2.5 bg-neutral-200`}
           onClick={() => setTheme(!theme)}
         >
           <div
-            className={`absolute top-[5px] p-1 w-8 h-8 flex items-center justify-center rounded-full transition-all duration-300 ease-in-out shadow-dark bg-zinc-400 ${
+            className={`absolute top-[5px] p-1 w-6 h-6 sm:w-8 sm:h-8 flex items-center justify-center rounded-full transition-all duration-300 ease-in-out shadow-dark bg-zinc-400 ${
               theme
                 ? "translate-x-1 text-sky-600"
-                : "translate-x-11 text-yellow-400"
+                : "translate-x-7 sm:translate-x-11 text-yellow-400"
             }`}
           >
             {theme ? (
-              <p className="text-xl">🌙</p>
+              <p className="sm:text-xl">🌙</p>
             ) : (
-              <p className="text-xl">☀</p>
+              <p className="sm:text-xl">☀</p>
             )}
           </div>
         </button>

@@ -13,7 +13,7 @@ export function CartTailwind() {
       role="dialog"
       aria-label="Carrinho de compras"
       aria-modal="true"
-      className={`fixed w-full sm:w-[380px] top-0 right-0 flex flex-col justify-between px-2 py-6 h-screen ${
+      className={`fixed w-full sm:w-[380px] top-0 right-0 flex flex-col justify-between px-2 py-6 h-full ${
         theme
           ? "bg-neutral-800 border-zinc-600 border-l"
           : "bg-white shadow-light text-black"
