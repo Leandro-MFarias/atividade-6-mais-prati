@@ -1,0 +1,61 @@
+.cartItems {
+  display: flex;
+  flex-grow: 1;
+  gap: 16px;
+  padding-left: 8px;
+}
+
+.cartItems img {
+  width: 96px;
+  border-radius: 6px;
+}
+
+.itemsContainer {
+  padding-top: 8px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.itemsContainer .title {
+  font-weight: bold;
+  max-width: 95%;
+  color: orangered;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.itemsContainer .price {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.itemsDetails {
+  display: flex;
+  gap: 60px;
+}
+
+.itemsDetails div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-left: 8px;
+}
+
+.itemsDetails div button {
+  color: orangered;
+  cursor: pointer;
+  transition: all .2s linear;
+}
+
+.itemsDetails div button:hover {
+  transform: scale(125%);
+} 
+
+.trash {
+  cursor: pointer;
+  font-size: 20px;
+  color: red;
+}

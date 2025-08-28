@@ -1,0 +1,95 @@
+.header-css {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 16px;
+  border-bottom: 2px solid orangered;
+}
+
+.container-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.container-logo img {
+  width: 44px;
+}
+
+.container-logo h2 {
+  align-self: end;
+  font-size: 30px;
+  color: orangered;
+  font-weight: 500;
+}
+
+.navigation {
+  display: flex;
+  align-items: end;
+  gap: 32px;
+}
+
+.container-toggle {
+  position: relative;
+  width: 80px;
+  height: 40px;
+  border-radius: 24px;
+  transform: translateY(10px);
+  background-color: #6b6a6a;
+  cursor: pointer;
+}
+
+.toggle {
+  position: absolute;
+  top: 5px;
+  padding: 4px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  transition: all .3s ease-in-out;
+  background-color: #c7c5c5;
+}
+
+.toggle p {
+  font-size: 20px;
+}
+
+.toggle-dark {
+  transform: translateX(4px);
+}
+
+.toggle-light {
+  transform: translateX(44px);
+}
+
+.btn-cart {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 20px;
+  transition: .2s ease-in;
+  cursor: pointer;
+}
+
+.btn-cart:hover {
+  transform: scale(105%);
+}
+
+.btn-cart-items {
+  position: relative;
+}
+
+.btn-cart-items span {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: rgb(243, 0, 0);
+  color: white;
+  padding: 0 4px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 100%;
+}

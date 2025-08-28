@@ -1,0 +1,25 @@
+.containerProducts {
+  max-width: 1366px;
+  margin: 0 auto;
+  display: grid;
+  justify-items: center;
+  gap: 28px;
+}
+
+@media (min-width: 640px) {
+  .containerProducts {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 768px) {
+  .containerProducts {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1280px) {
+  .containerProducts {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}

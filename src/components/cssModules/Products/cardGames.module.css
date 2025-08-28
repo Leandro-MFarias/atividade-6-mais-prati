@@ -1,0 +1,76 @@
+.cardGame {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 286px;
+  height: 360px;
+  padding: 16px 8px;
+  border-radius: 12px;
+}
+
+.gameType {
+  align-self: start;
+  width: 72px;
+  display: flex;
+  justify-content: center;
+  padding: 8px 0;
+  border-radius: 24px;
+  font-weight: bold;
+}
+
+.cardGame img {
+  width: 128px;
+  align-self: center;
+  border-radius: 8px;
+}
+
+.gameName {
+  font-weight: bold;
+  max-width: 90%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #c1c1c1;
+}
+
+.containerStars {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.containerStars p {
+  color: orangered;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.containerStars div {
+  display: flex;
+}
+
+.rating {
+  color: yellow;
+}
+
+.noRating {
+  color: #c1c1c1;
+}
+
+.btnAdd {
+  border: 2px solid orangered;
+  color: orangered;
+  border-radius: 8px;
+  padding: 8px 0;
+  width: 91%;
+  align-self: center;
+  font-weight: bold;
+  transition: .3s ease;
+  cursor: pointer;
+}
+
+.btnAdd:hover {
+  background-color: orangered;
+  color: white;
+}

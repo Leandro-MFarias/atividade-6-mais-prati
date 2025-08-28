@@ -23,7 +23,7 @@ export function HeaderTailwind() {
   return (
     <header className="flex items-center justify-between py-6 xl:px-3 px-4 border-b-2 border-orange-600 ">
       <div className="flex items-center space-x-2">
-        <img src={logo} alt="" className="w-11" />
+        <img src={logo} alt="logo do site" className="w-11" />
         <h2 className="self-end text-xl sm:text-3xl text-orange-500 font-semibold">
           GameShop
         </h2>
@@ -37,8 +37,8 @@ export function HeaderTailwind() {
           <div
             className={`absolute top-[5px] p-1 w-6 h-6 sm:w-8 sm:h-8 flex items-center justify-center rounded-full transition-all duration-300 ease-in-out shadow-dark bg-zinc-400 ${
               theme
-                ? "translate-x-1 text-sky-600"
-                : "translate-x-7 sm:translate-x-11 text-yellow-400"
+                ? "translate-x-1"
+                : "translate-x-7 sm:translate-x-11"
             }`}
           >
             {theme ? (

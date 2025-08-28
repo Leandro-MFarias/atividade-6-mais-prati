@@ -41,7 +41,7 @@ export function CartTailwind() {
       </div>
 
       <p className="text-3xl font-bold py-4 pl-4">
-        Total: <span className="">{localePrice(totalToPay)}</span>
+        Total: <span>{localePrice(totalToPay)}</span>
       </p>
     </div>
   );
